@@ -99,12 +99,13 @@ Example response:
 ```
 
 # **Search for round flights**
-Search for round flights in given city's iata code combinations and dates. Be aware of flexible field value. If false, engine will search only revert flights for the same two airports like in found flight in first way. If true, it will search for flights from found destination to all airports from departure list. Example:
-_flexible: false_
-request: destination: [A,B] -> departure [X,Y]
+Search for round flights in given city's iata code combinations and dates. Be aware of flexible field value. If false, engine will search only revert flights for the same two airports like in found flight in first way. If true, it will search for flights from found destination to all airports from departure list. Example request:
+```
+destination: [A,B] -> departure [X,Y]
+```
+* _flexible: false_
 if found first way flight has connection A -> X then engine will search for return flights X -> A
-_flexible: true_
-request: destination: [A,B] -> departure [X,Y]
+* _flexible: true_
 if found first way flight has connection A -> X then engine will search for return flights X -> A and X -> B
 ### POST <api_addres>/v1/flights/round
 Request body:
