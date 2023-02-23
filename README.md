@@ -50,7 +50,7 @@ Example request body:
 Response if scuccess:
 | Name | Type| Description|
 | ------ | ------ |  ------ |
-| flights| list of flights (described below) | list with flights details |
+| onewayFlights| list of flights (described below) | list with flights details |
 | last| boolean | if current page is the last one|
 | totalFlights| integer | total flights found|
 | page| integer | page number |
@@ -67,7 +67,7 @@ Flight type:
 Example response: 
 ```json
 {
-	"flights": [
+	"onewayFlights": [
 		{
 			"updatedAt": "2023-02-22",
 			"date": "2023-03-17",
@@ -134,7 +134,7 @@ Example request body:
 Response if scuccess:
 | Name | Type| Description|
 | ------ | ------ |  ------ |
-| flights| list of round flights (described below) | list with flights details |
+| roundFlights| list of round flights (described below) | list with flights details |
 | last| boolean | is current page the last one|
 | totalFlights| integer | total flights found|
 | page| integer | page number |
@@ -148,7 +148,7 @@ Round flight type:
 Example response:
 ```json
 {
-	"flights": [
+	"roundFlights": [
 		{
 			"firstFlight": {
 				"updatedAt": "2023-02-22",
@@ -202,7 +202,7 @@ Example response:
 		}
 	],
 	"last": true,
-	"totalFlights": 13,
+	"totalFlights": 1,
 	"page": 0
 }
 ```
