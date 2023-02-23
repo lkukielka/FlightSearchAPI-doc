@@ -51,7 +51,7 @@ Response if scuccess:
 | Name | Type| Description|
 | ------ | ------ |  ------ |
 | flights| list of flights (described below) | list with flights details |
-| lastPage| boolean | if current page is the last one|
+| last| boolean | if current page is the last one|
 | totalFlights| integer | total flights found|
 | page| integer | page number |
 
