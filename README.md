@@ -28,7 +28,7 @@ Request url params:
 
 # **Search for one way flights**
 Search for one-way flights in given city's iata code combinations and dates
-### POST <api_addres>/v1/flights/oneway
+### POST <api_address>/v1/flights/oneway
 Request body:
 | Name | Type| Required |  Description|
 | ------ | ------ | ------ |  ------ |
@@ -107,7 +107,7 @@ destination: [A,B] -> departure [X,Y]
 if found first way flight has connection A -> X then engine will search for return flights X -> A
 * _flexible: true_
 if found first way flight has connection A -> X then engine will search for return flights X -> A and X -> B
-### POST <api_addres>/v1/flights/round
+### POST <api_address>/v1/flights/round
 Request body:
 | Name | Type| Required |  Description|
 | ------ | ------ | ------ |  ------ |
