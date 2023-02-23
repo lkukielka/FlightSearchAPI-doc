@@ -51,7 +51,7 @@ Response if scuccess:
 | Name | Type| Description|
 | ------ | ------ |  ------ |
 | flights| list of flights (described below) | list with flights details |
-| last| boolean | is current page the last one|
+| lastPage| boolean | if current page is the last one|
 | totalFlights| integer | total flights found|
 | page| integer | page number |
 
@@ -116,7 +116,7 @@ Request body:
 | startDate| string | true | latest possible flights date in yyyy-MM-dd format |
 | minDays| integer | true | mininimum trip duration in days|
 | maxDays| integer | true | maximum trip duration in days |
-| flexible| boolean | true | described above |
+| flexible| boolean | true | if flexible search mode turn on |
 
 Example request body:
 ```json
