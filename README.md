@@ -19,7 +19,7 @@ If you want to get the apiKey or have any questions let me know at leskukie[at]g
 Request url params:
 | Name | Type| Required | Default| Description|
 | ------ | ------ | ------ | ------ | ------ |
-| apiKey| string | true | - | authentication token, you can get it by sending me mail at leskukie[at]gmail[dot]com|
+| apiKey| string | true | - | authentication token, you can get it by sending me an e-mail at leskukie[at]gmail[dot]com|
 | page| integer | false | 0 | page number|
 | size| integer | false | 20 | page size|
 | sortBy| string | false | priceInEuro | result's sort field, possible values: _priceInEuro, date, departure, destination_|
@@ -33,7 +33,7 @@ Request body:
 | Name | Type| Required |  Description|
 | ------ | ------ | ------ |  ------ |
 | departure| string list | true | departure airports iata codes, for example LTN or CFU |
-| destination| string list | false | destination airport iata codes, like above. if empty api returns flights to all possible destinations|
+| destination| string list | false | destination airport iata codes, like above. if empty, api returns flights to all possible destinations|
 | endDate| string | true | earliest possible flight date in yyyy-MM-dd format|
 | startDate| string | true | latest possible flights date in yyyy-MM-dd format |
 
@@ -112,7 +112,7 @@ Request body:
 | Name | Type| Required |  Description|
 | ------ | ------ | ------ |  ------ |
 | departure| string list | true | departure airports iata codes, for example LTN or CFU |
-| destination| string list | false | destination airport iata codes, like above. if empty api returns flights to all possible destinations|
+| destination| string list | false | destination airport iata codes, like above. if empty, api returns flights to all possible destinations|
 | endDate| string | true | earliest possible flight date in yyyy-MM-dd format|
 | startDate| string | true | latest possible flights date in yyyy-MM-dd format |
 | minDays| integer | true | mininimum trip duration in days|
